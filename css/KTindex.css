@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/*自定义颜色*/
+/*
+@ l左 r右 b下 t上 m中
+*/
+body {
+  width: 100%;
+  height: 806px;
+  border: 9px solid #ECF0F5;
+  border-bottom: none;
+  background: #FFFFFF;
+  /*两个左右div l r左右对其*/
+  /*左边图形*/
+  /*流程图上部分*/
+  /*详情页*/
+}
+body .lr {
+  float: left;
+}
+body #l {
+  width: 1054px;
+  height: 797px;
+  border-right: 5px solid #ECF0F5;
+  /*左边图形上部分*/
+  /*左边图形下部分*/
+}
+body #l .lt {
+  width: 1010px;
+  height: 60px;
+  margin: 0 auto;
+  border-bottom: 2px solid #EEEEEE;
+}
+body #l .lt div {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  background: url("../img/Computer.png") no-repeat left center;
+  position: relative;
+  top: 23px;
+  left: 20px;
+}
+body #l .lt p {
+  padding-left: 30px;
+  font-weight: bold;
+  color: #0179BC;
+}
+body #l .lb {
+  width: 1054px;
+  height: 735px;
+  margin: 0 auto;
+  /*左边图形下部分两个DIV*/
+  /*左边图形下部分左侧DIV*/
+  /*echars*/
+}
+body #l .lb .lblr {
+  float: left;
+}
+body #l .lb .lb-l {
+  width: 275px;
+  height: 735px;
+  /*树形*/
+}
+body #l .lb .lb-l .tree {
+  width: 218px;
+  /*  box-shadow: 3px 3px 6px #666;*/
+  position: relative;
+  top: 41px;
+  left: 55px;
+  /*树形第一层*/
+  /*树形第二层*/
+}
+body #l .lb .lb-l .tree .subNav {
+  width: 218px;
+  height: 41px;
+  line-height: 41px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #F8F8F8;
+  border: 1px solid #E5E5E5;
+  margin-top: 1px;
+  text-align: center;
+}
+body #l .lb .lb-l .tree .subNav span {
+  display: inline-block;
+}
+body #l .lb .lb-l .tree .subNav .is {
+  width: 12px;
+  height: 12px;
+  background-position: 50% 50%;
+  position: relative;
+  top: 1px;
+  right: 1px;
+}
+body #l .lb .lb-l .tree .subNav .i1 {
+  background: url("../img/Apply.png") no-repeat;
+}
+body #l .lb .lb-l .tree .subNav .i2 {
+  background: url("../img/Tender.png") no-repeat;
+}
+body #l .lb .lb-l .tree .subNav .i3 {
+  background: url("../img/Open.png") no-repeat;
+}
+body #l .lb .lb-l .tree .subNav .i4 {
+  background: url("../img/Metaphase.png") no-repeat;
+}
+body #l .lb .lb-l .tree .subNav .i5 {
+  background: url("../img/Knot.png") no-repeat;
+}
+body #l .lb .lb-l .tree .subNav .i6 {
+  background: url("../img/Budget.png") no-repeat;
+}
+body #l .lb .lb-l .tree .subNav .ud {
+  float: right;
+  width: 12px;
+  height: 12px;
+  background: url("../img/up.png") no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+  top: 15px;
+  right: 20px;
+}
+body #l .lb .lb-l .tree .currentDd {
+  background: #5FC1FB;
+  color: #FFFFFF;
+}
+body #l .lb .lb-l .tree .subNav:hover {
+  background: #5FC1FB;
+  color: #FFFFFF;
+}
+body #l .lb .lb-l .tree .navContent {
+  display: none;
+}
+body #l .lb .lb-l .tree .navContent div {
+  width: 218px;
+  height: 41px;
+  line-height: 41px;
+  border: 1px solid #EEEEEE;
+  border-top: none;
+  background: url("../img/Document.png") no-repeat;
+  background-position: 4% 47%;
+  cursor: pointer;
+}
+body #l .lb .lb-l .tree .navContent div p {
+  padding-left: 27px;
+  width: 185px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body #l .lb .lb-l .tree .navContent div:hover {
+  color: #0000FF;
+}
+body #l .lb .lb-l .tree .navContent .nav-first {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+body #l .lb .lb-l .tree .navContent .nav-last {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+body #l .lb .lb-r {
+  width: 779px;
+  height: 735px;
+}
+body #l .lb .lb-r #main {
+  width: 700px;
+  height: 450px;
+  margin: 43px auto;
+  box-shadow: 3px 3px 6px #666;
+}
+body #r {
+  width: 286px;
+  height: 797px;
+  /*流程图下部分*/
+}
+body #r .rt {
+  width: 248px;
+  height: 60px;
+  margin: 0 auto;
+  border-bottom: 2px solid #EEEEEE;
+}
+body #r .rt div {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  background: url("../img/flow_chart.png") no-repeat left center;
+  position: relative;
+  top: 23px;
+  left: 20px;
+}
+body #r .rt p {
+  padding-left: 30px;
+  font-weight: bold;
+  color: #0179BC;
+}
+body #r .rb {
+  /*预算节点*/
+}
+body #r .rb .rb-box {
+  margin: 41px auto;
+  /*每个状态节点*/
+}
+body #r .rb .rb-box .rbs {
+  margin: 0 auto;
+  width: 160px;
+  height: 20px;
+  line-height: 20px;
+}
+body #r .rb .rb-box .rbs p {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+body #r .rb .rb-box .dashed {
+  width: 1px;
+  height: 55px;
+  margin: 0 0 0 141px;
+  border-right: 2px dotted #7BC5F1;
+}
+body #r .rb .rb-box .rb-f {
+  margin: 0 auto;
+  background: url("../img/complete.png") no-repeat;
+  background-position: 50% 50%;
+}
+body #r .rb .rb-box .rb-f p {
+  padding-left: 5px;
+  cursor: pointer;
+}
+body #r .rb .rb-box .rb2 {
+  background: url("../img/pendingcompletion.png") no-repeat;
+  background-position: 50% 50%;
+}
+body #r .rb .rb-box .rb2 p {
+  padding-left: 104px;
+}
+body #r .rb .rb-box .rb3 {
+  background: url("../img/pendingcompletion.png") no-repeat;
+  background-position: 50% 50%;
+}
+body #r .rb .rb-box .rb3 p {
+  padding-left: 30px;
+}
+body #r .rb .rb-box .rb4 {
+  background: url("../img/pendingcompletion.png") no-repeat;
+  background-position: 50% 50%;
+}
+body #r .rb .rb-box .rb4 p {
+  padding-left: 104px;
+}
+body #r .rb .rb-box .rb5 {
+  background: url("../img/pendingcompletion.png") no-repeat;
+  background-position: 50% 50%;
+}
+body #r .rb .rb-box .rb5 p {
+  padding-left: 30px;
+}
+body #r .rb .rb-box .rb6 {
+  background: url("../img/selected.png") no-repeat;
+  background-position: 50% 50%;
+}
+body #r .rb .rb-box .rb6 p {
+  padding-left: 104px;
+}
+body #r .rb .rb-y {
+  margin: 55px auto;
+  width: 160px;
+  height: 20px;
+  line-height: 20px;
+  background: url("../img/selected.png") no-repeat;
+  background-position: 50% 50%;
+}
+body #r .rb .rb-y p {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 30px;
+}
+body .details-page {
+  display: none;
+  width: 600px;
+  background: #ffffff;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -150px 0 0 -301px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+body .details-page .page1 {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #F3F3E3;
+}
+body .details-page .page1 .page1span {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 3px 0 0 22px;
+}
+body .details-page .page1 #close {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background: url("../img/closet.png") no-repeat;
+  margin: 10px 20px 0 0;
+  cursor: pointer;
+}
+body .details-page .page2 {
+  width: 100%;
+}
+body .details-page .page2 li {
+  margin-top: 5px;
+}
+body .details-page .page2 li .li-box {
+  margin: 0 auto;
+  width: 560px;
+  height: 40px;
+  line-height: 40px;
+}
+body .details-page .page2 li .li-box a {
+  float: left;
+  display: block;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+}
+body .details-page .page2 li .li-box .span1 {
+  float: left;
+  padding-left: 12px ;
+  width: 180px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+body .details-page .page2 li .li-box .span1:hover {
+  color: #0000CC;
+}
+body .details-page .page2 li .li-box .span2 {
+  float: left;
+  padding-left: 12px ;
+  width: 464px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+body .details-page .page2 li .li-box .span2:hover {
+  color: #0000CC;
+}
+body .details-page .page2 li .li-box .box {
+  float: left;
+}
+body .details-page .page2 li .li-box .box1 {
+  width: 280px;
+  height: 40px;
+  line-height: 40px;
+}
+body .details-page .page2 li .li-box .box2 {
+  width: 280px;
+  height: 40px;
+  line-height: 40px;
+}
+body .details-page .page3 {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  background: #F3F3E3;
+}

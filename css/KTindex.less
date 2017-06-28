@@ -1,0 +1,445 @@
+@charset "UTF-8";
+/*自定义颜色*/
+@body-border-c:#ECF0F5;//body边框颜色
+@ziti-c:#0179BC;//字体颜色
+/*
+@ l左 r右 b下 t上 m中
+*/
+body{
+  width: 100%;
+  height: 700px;
+  border: 9px solid #ECF0F5;
+  /*border-bottom: none;*/
+  background: #FFFFFF;
+  overflow-x: hidden;
+  /*两个左右div l r左右对其*/
+  .lr{
+    float: left;
+  }
+  /*左边图形*/
+  #l{
+    width: 77%;
+    height: 700px;
+    border-right: 5px solid #ECF0F5;
+
+    /*左边图形上部分*/
+    .lt{
+      width:95%;
+      height: 60px;
+      margin: 0 22px auto;
+      border-bottom: 2px solid #EEEEEE;
+      div{
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        background: url("../img/Computer.png") no-repeat left center;
+        position: relative;
+        top: 23px;
+        left: 20px;
+
+      }
+      p{
+        padding-left: 30px;
+        font-weight: bold;//700
+        color: #0179BC;
+      }
+    }
+
+    /*左边图形下部分*/
+    .lb{
+      width: 100%;
+      height: 700px;
+      margin: 0 auto;
+
+      /*左边图形下部分两个DIV*/
+      .lblr{
+        float: left;
+      }
+      /*左边图形下部分左侧DIV*/
+      .lb-l{
+        width: 26%;
+        height: 639px;
+
+        /*树形*/
+        .tree{
+          width: 79%;
+        /*  box-shadow: 3px 3px 6px #666;*/
+/*          position: relative;
+          top: 41px;
+          left: 55px;*/
+          float: right;
+          margin: 41px 5px 0 0;
+
+          /*树形第一层*/
+          .subNav{
+            width:100%;
+            height: 41px;
+            line-height: 41px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            background:#F8F8F8;
+            border: 1px solid #E5E5E5;
+            margin-top: 1px;
+            text-align: center;
+            span{
+              display: inline-block;
+            }
+            .is{
+              width: 12px;
+              height: 12px;
+              background-position: 50% 50%;
+              position: relative;
+              top: 1px;
+              right: 1px;
+            }
+            .i1{
+              background: url("../img/Apply.png") no-repeat;
+            }
+            .i2{
+              background: url("../img/Tender.png") no-repeat;
+            }
+            .i3{
+                background: url("../img/Open.png") no-repeat;
+            }
+            .i4{
+              background: url("../img/Metaphase.png") no-repeat;
+            }
+            .i5{
+              background: url("../img/Knot.png") no-repeat;
+            }
+            .i6{
+              background: url("../img/Budget.png") no-repeat;
+            }
+            .ud{
+              float: right;
+              width: 12px;
+              height: 12px;
+              background: url("../img/up.png") no-repeat;
+              background-position: 50% 50%;
+              position: relative;
+              top: 15px;
+              right: 20px;
+            }
+            /*过渡动画*/
+            -webkit-transition: all .2s linear 0s;
+            -moz-transition: all .2s linear 0s;
+            -ms-transition: all .2s linear 0s;
+            -o-transition: all .2s linear 0s;
+            transition: all .2s linear 0s;
+          }
+          .currentDd {
+            background: #5FC1FB;
+            color: #FFFFFF;
+          }
+          .subNav:hover{
+            background: #5FC1FB;
+            color: #FFFFFF;
+          }
+
+          /*树形第二层*/
+          .navContent{
+            display: none;
+            div{
+              width: 100%;
+              height: 41px;
+              line-height: 41px;
+              border: 1px solid #EEEEEE;
+              border-top: none;
+              background: url("../img/Document.png") no-repeat;
+              background-position: 4% 47%;
+              cursor: pointer;
+
+              p{
+                padding-left: 27px;
+                width:85%;
+                white-space:nowrap;
+                overflow:hidden;
+                text-overflow:ellipsis;
+              }
+            }
+
+            div:hover{
+              color: #0000FF;
+            }
+
+            .nav-first{
+              border-top-left-radius: 4px;//左上角
+              border-top-right-radius: 4px;//右上角
+            }
+            .nav-last{
+              border-bottom-right-radius: 4px;//右下角
+              border-bottom-left-radius: 4px;//左下角
+            }
+          }
+        }
+      }
+      /*echars*/
+      .lb-r{
+        width: 74%;
+        height: 639px;
+
+        #main{
+          width: 93%;
+          height: 70%;
+
+          margin: 43px 20px 0 20px;
+          box-shadow: 3px 3px 6px #666;
+        }
+      }
+    }
+  }
+  /*流程图上部分*/
+  #r{
+    width: 22%;
+    height: 700px;
+
+    .rt{
+      width:95%;
+      height: 60px;
+      margin: 0 22px auto;
+      border-bottom: 2px solid #EEEEEE;
+
+      div{
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        background: url("../img/flow_chart.png") no-repeat left center;
+        position: relative;
+        top: 23px;
+        left: 20px;
+
+        p{
+          padding-left: 30px;
+          font-weight: bold;//700
+          color: #0179BC;
+        }
+      }
+     .cs{
+          width:100px;
+          height: 300px;
+       a{
+         color: red;
+       }
+     }
+    }
+
+    /*流程图下部分*/
+    .rb{
+      .rb-box{
+        margin: 41px auto;
+        position: relative;
+        .rbs{
+          margin: 0 auto;
+          width: 160px;
+          height: 20px;
+          line-height: 20px;
+          p{
+            display: inline-block;
+            height: 20px;
+            line-height: 20px;
+          }
+        }
+        .dashed{
+          width: 1px;
+          height: 55px;
+          margin: 0 0 0 49%;
+          border-right: 2px dotted #7BC5F1;
+
+        }
+        /*每个状态节点*/
+        .rb-f{
+          margin: 0 auto;
+          background: url("../img/complete.png") no-repeat;
+          background-position: 50% 50%;
+          p{
+            padding-left: 5px;
+            cursor: pointer;
+          }
+        }
+        .rb2{
+          background: url("../img/pendingcompletion.png") no-repeat;
+          background-position: 50% 50%;
+          p{
+            padding-left: 104px;
+          }
+        }
+        .rb3{
+          background: url("../img/pendingcompletion.png") no-repeat;
+          background-position: 50% 50%;
+          p{
+            padding-left: 30px;
+          }
+
+        }
+        .rb4{
+          background: url("../img/pendingcompletion.png") no-repeat;
+          background-position: 50% 50%;
+          p{
+            padding-left: 104px;
+          }
+        }
+        .rb5{
+          background: url("../img/pendingcompletion.png") no-repeat;
+          background-position: 50% 50%;
+          p{
+            padding-left: 30px;
+          }
+        }
+        .rb6{
+          background: url("../img/selected.png") no-repeat;
+          background-position: 50% 50%;
+          p{
+            padding-left: 104px;
+          }
+        }
+      }
+      /*预算节点*/
+      .rb-y{
+        margin:55px auto;
+        width: 160px;
+        height: 20px;
+        line-height: 20px;
+        background: url("../img/selected.png") no-repeat;
+        background-position: 50% 50%;
+        p{
+          display: inline-block;
+          height: 20px;
+          line-height: 20px;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+
+  /*详情页*/
+  .details-page{
+    display: none;
+    width: 600px;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -150px 0 0 -301px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    z-index: 3000;
+
+    -webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -ms-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
+    .page1{
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      background:#F3F3E3;
+
+      .page1span{
+        font-weight: bold;
+        font-size: 14px;
+        padding: 3px 0 0 22px;
+      }
+      #close{
+        float: right;
+        width: 24px;
+        height: 24px;
+        background: url("../img/closet.png") no-repeat;
+        margin: 10px 20px 0 0;
+        cursor: pointer;
+      }
+    }
+    .page2{
+      width: 100%;
+
+      li{
+        margin-top: 5px;
+
+        .li-box{
+          margin: 0 auto;
+          width: 560px;
+          height: 40px;
+          line-height: 40px;
+
+          a{
+            float: left;
+            display:block;
+            color: black;
+            font-size: 14px;
+            font-weight: 700;
+          }
+
+          .span1{
+            float: left;
+            padding-left: 12px ;
+            width: 180px;
+            display:block;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            cursor: pointer;
+          }
+          .span1:hover{
+            color: #0000CC;
+          }
+          .span2{
+            float: left;
+            padding-left: 12px ;
+            width: 464px;
+            display:block;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            cursor: pointer;
+          }
+          .span2:hover{
+            color: #0000CC;
+          }
+          .box{
+            float: left;
+          }
+          .box1{
+            width: 280px;
+            height: 40px;
+            line-height: 40px;
+          }
+          .box2{
+            width: 280px;
+            height: 40px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+    .page3{
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      background:#F3F3E3;
+    }
+  }
+
+  @media all and(max-width:1280px){
+    //大于320px小于360px
+    #main{
+      height: 300px;
+    }
+    .subNav {
+      height: 100px;
+    }
+  }
+}
+/*灰色遮罩层*/
+#opcity{
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  position:fixed;
+  background:rgba(0,0,0,0.6);
+  display:none;
+  z-index:0;
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>课题管理</title>
+    <!--声明文档的使用编码-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8;"/>
+    <!--视口（默认980） 缩放-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--禁止识别拨号-->
+    <meta name="format-detection" content="telephone=no"/>
+    <!--禁止浏览器从本地计算机的缓存中访问页面内容。注意 开发模式可以，上线产品删除-->
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <link charset="UTF-8" type="text/css" rel="stylesheet" href="./css/reset.min.css"/>
+    <link charset="UTF-8" type="text/css" rel="stylesheet/less" href="./css/KTindex.less"/>
+    <!--<link charset="UTF-8" type="text/css" rel="stylesheet" href="./css/KTindex.css"/>-->
+</head>
+<body>
+<div id="box">
+<div id="l" class="lr">
+    <div class="lt">
+        <div>
+            <p>流程演示</p>
+        </div>
+    </div>
+    <div class="lb">
+        <div class="lb-l lblr">
+            <div class="tree">
+                <div class="subNav">
+                    <span class="i1 is"></span>
+                    <span>申请审批</span>
+                    <span class="ud"></span>
+                </div>
+                <ul class="navContent">
+                    <li>
+                            <div class="nav-first" title="双击了解详情">
+                            <p>课题来源课题来源课题来源课题来源课题来源课题来源</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div title="双击了解详情">
+                            <p>研究效应期限</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div title="双击了解详情">
+                            <p>研究涉及区域</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-last" title="双击了解详情">
+                            <p>课题组成单位</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="subNav">
+                    <span class="i2 is"></span>
+                    <span>招 标</span>
+                    <span class="ud"></span>
+                   </div>
+                <ul class="navContent">
+                    <li>
+                        <div class="nav-first nav-last" title="双击了解详情">
+                            <p>未知名称</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="subNav">
+                    <span class="i3 is"></span>
+                    <span>开 题</span>
+                    <span class="ud"></span></div>
+                <ul class="navContent">
+                    <li>
+                        <div class="nav-first nav-last" title="双击了解详情">
+                            <p>未知名称</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="subNav">
+                    <span class="i4 is"></span>
+                    <span>中 期</span>
+                    <span class="ud"></span>
+                </div>
+                <ul class="navContent">
+                    <li>
+                        <div class="nav-first nav-last" title="双击了解详情">
+                            <p>未知名称</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="subNav">
+                    <span class="i5 is"></span>
+                    <span>结 算</span>
+                    <span class="ud"></span>
+                </div>
+                <ul class="navContent">
+                    <li>
+                        <div class="nav-first nav-last" title="双击了解详情">
+                            <p>未知名称</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="subNav">
+                    <span class="i6 is"></span>
+                    <span>预 算</span>
+                    <span class="ud"></span>
+                </div>
+                <ul class="navContent">
+                    <li>
+                        <div class="nav-first nav-last" title="双击了解详情">
+                            <p>未知名称</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="lb-r lblr">
+            <div id="main">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="r" class="lr">
+    <div class="rt">
+        <div>
+            <p>流程图</p>
+        </div>
+    </div>
+    <div class="rb">
+        <div class="rb-box">
+            <div class="rb-f rb1 rbs">
+                <p>申请审批</p>
+            </div>
+            <div class="dashed"></div>
+            <div class="rb2 rbs">
+                <p>招标</p>
+            </div>
+            <div class="dashed"></div>
+            <div class="rb3 rbs">
+                <p>开题</p>
+            </div>
+            <div class="dashed"></div>
+            <div class="rb4 rbs">
+                <p>中期</p>
+            </div>
+            <div class="dashed"></div>
+            <div class="rb5 rbs">
+                <p>结题</p>
+            </div>
+            <div class="dashed"></div>
+            <div class="rb6 rbs">
+                <p>归档</p>
+            </div>
+        </div>
+        <div class="rb-y">
+            <p>预算</p>
+        </div>
+    </div>
+</div>
+<!--详情页-->
+<div class="details-page">
+    <!--详情头部-->
+    <div class="page1">
+        <span class="page1span">详情</span>
+        <span id="close"></span>
+    </div>
+    <!--详情主体-->
+    <div class="page2">
+        <ul>
+            <li>
+                <div class="li-box">
+                    <div class="box1 box">
+                        <a href="javascript:void(0)">研究目标</a>
+                        <span class="span1" title="没有蛀牙没有蛀牙没有蛀牙没有蛀牙没有蛀牙没有蛀牙没有蛀牙没有蛀牙没有蛀牙">没有蛀牙没有蛀牙没有蛀牙没有蛀牙没有蛀牙没有蛀牙没有蛀牙没有蛀牙没有蛀牙</span>
+                    </div>
+                    <div class="box2 box">
+                        <a href="javascript:void(0)">课题来源</a>
+                        <span class="span1">市委市政府交办课题</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="li-box">
+                    <div class="box1 box">
+                        <a href="javascript:void(0)">课题等级</a>
+                        <span class="span1">处级课题</span>
+                    </div>
+                    <div class="box2 box">
+                        <a href="javascript:void(0)">调研经费标准</a>
+                        <span class="span1">10万元</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="li-box">
+                    <div class="box1 box">
+                        <a href="javascript:void(0)">调研经费总额</a>
+                        <span class="span1">9万元</span>
+                    </div>
+                    <div class="box2 box">
+                        <a href="javascript:void(0)">经费来源</a>
+                        <span class="span1">本局自定课题区</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="li-box">
+                        <a href="javascript:void(0)">课题组成单位</a>
+                        <span class="span2">XXXXXXXXX (是否需要由外单位合作研究或完全委托外部合作单位)</span>
+                </div>
+            </li>
+            <li>
+                <div class="li-box">
+                    <a href="javascript:void(0)">研究内容</a>
+                    <span class="span2" title="XXXXXXXXX (是否需要由外单位合作研究或完全委托外部合作单位)东东风费大幅度发地方大幅度发放假了福建高速来几个司法机关打飞机是否假按揭佛挡杀佛">XXXXXXXXX (是否需要由外单位合作研究或完全委托外部合作单位)东东风费大幅度发地方大幅度发</span>
+                </div>
+            </li>
+            <li>
+                <div class="li-box">
+                    <a href="javascript:void(0)">研究方法</a>
+                    <span class="span2">XXXXXXXXX (是否需要由外单位合作研究或完全委托外部合作单位)东东风</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--详情尾部-->
+    <div class="page3"></div>
+</div>
+    <!--灰色遮罩层-->
+    <div id="opcity"></div>
+</div>
+</body>
+<script charset="UTF-8" type="text/javascript" src="./js/less-2.5.3.min.js"></script>
+<script charset="UTF-8" type="text/javascript" src="./js/jquery1.7.2.js"></script>
+<script charset="UTF-8" type="text/javascript" src="./js/echarts.min.js"></script>
+<script charset="UTF-8" type="text/javascript" src="./js/KTindex.js"></script>
+<script charset="UTF-8" type="text/javascript">
+    $(window).on('resize',function(){
+
+        myChart.resize();
+
+    });
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    option = {
+        title: {
+            text: '课题管理'
+        },
+        //图线颜色
+        color:['#5FC1FB'],
+        //字体颜色
+        textStyle: {
+            color: 'black'
+        },
+        //背景颜色
+        backgroundColor: '#F8F8F8', 
+        tooltip: {},
+        legend: {
+            data: ['课题名称:12345上山打老虎']
+        },
+        radar: {
+            // shape: 'circle',
+            splitArea: {//背景分割区域
+                areaStyle: {
+                    color: ['#90D3FD','#FFFFFF']//由里到外顺序依次设置颜色
+                }
+            },
+            indicator: [
+                { name: '招标（已完成）', max: 6500},
+                { name: '申请审批（已完成）', max: 16000},
+                { name: '归档（待完成）', max: 30000},
+                { name: '结题（待完成）', max: 38000},
+                { name: '中期（进行中）', max: 52000},
+                { name: '开题（已完成）', max: 25000}
+            ]
+        },
+        series: [{
+            /*name: '预算 vs 开销（Budget vs spending）',*/
+            type: 'radar',
+            areaStyle: {
+                normal: {
+                    color:'#007F39',
+                    opacity: 0.7 //透明度
+                }
+            },
+            data : [
+                {
+                    value : [6500, 16000, 0, 0, 0, 25000],
+                    name : '课题名称:12345上山打老虎'
+                }
+            ]
+        }]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+    //点击事件click 点击跳转
+/*    myChart.on('click', function (params) {
+        window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(params.name));
+    });*/
+</script>
+</html>
